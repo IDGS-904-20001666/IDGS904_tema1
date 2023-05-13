@@ -1,0 +1,38 @@
+﻿@model List<IDGS904_tema1.Models.Productos>
+
+@{
+    ViewBag.Title = "MostrarPulques";
+}
+
+<div class="container-lg">
+    <div class="w-100 text-center py-3">
+        <h2>Pulques</h2>
+    </div>
+    <div class="d-flex align-content-center justify-content-center"
+        <br />
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
+                        <th>Cantidad</th>
+                        <th>Produccion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Nombre</td>
+                            <td>@item.Descripcion</td>
+                            <td>@item.Cantidad</td>
+                            <td>@item.Produccion</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

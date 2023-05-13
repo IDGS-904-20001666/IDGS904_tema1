@@ -1,0 +1,41 @@
+﻿@model IDGS904_tema1.Models.OperasBas
+@{
+    ViewBag.Title = "Calculos";
+}
+
+<div class="container">
+    <h2 class="fw-bold">Calculos</h2>
+    <div class="d-flex align-content-start justify-content-start py-2">
+        <form action="/" method="POST">
+            <div class="mb-3">
+                <label for="Num1" class="form-label">Numero Uno</label>
+                <input type="number" class="form-control" name="Num1">
+            </div>
+            <div class="mb-3">
+                <label for="Num2" class="form-label">Numero Dos</label>
+                <input type="number" class="form-control" name="Num2">
+            </div>
+            <div class="mb-3 form-check-inline">
+                <input type="radio" class="form-check-input" name="Operacion" value="Sumar">
+                <label class="form-check-label">Sumar</label>
+            </div>
+            <div class="mb-3 form-check-inline">
+                <input type="radio" class="form-check-input" name="Operacion" value="Restar">
+                <label class="form-check-label">Restar</label>
+            </div>
+            <div class="mb-3 form-check-inline">
+                <input type="radio" class="form-check-input" name="Operacion" value="Multiplicar">
+                <label class="form-check-label">Multiplicar</label>
+            </div>
+            <div class="mb-3 form-check-inline">
+                <input type="radio" class="form-check-input" name="Operacion" value="Dividir">
+                <label class="form-check-label">Dividir</label>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary rounded-pill">Calcular</button>
+        </form>
+    </div>
+    <div class="alert alert-success rounded-pill w-25 my-2" role="alert">
+        El resultado es: @Html.DisplayFor(model => Model.Res)
+    </div>
+</div>

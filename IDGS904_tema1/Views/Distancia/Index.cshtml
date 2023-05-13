@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Calculos";
+}
+
+<div class="container">
+    <h2 class="fw-bold">Distancia entre dos puntos</h2>
+    <div class="py-2">
+        <form action="/Distancia/Calcular" method="POST">
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label for="EquisUno" class="form-label">X1</label>
+                    <input type="number" class="form-control" name="EquisUno" required>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label for="EquisDos" class="form-label">X2</label>
+                    <input type="number" class="form-control" name="EquisDos" required>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label for="YeUno" class="form-label">Y1</label>
+                    <input type="number" class="form-control" name="YeUno" required>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label for="YeDos" class="form-label">Y2</label>
+                    <input type="number" class="form-control" name="YeDos" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-outline-primary rounded-pill">Calcular</button>
+        </form>
+    </div>
+</div>
+
+

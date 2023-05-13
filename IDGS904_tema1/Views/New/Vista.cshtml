@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Vista";
+}
+
+<div class="d-flex align-content-center justify-content-center w-100">
+    <form action="/" method="post">
+        <div class="form-group">
+            <label for="numberOne">Numero 1</label>
+            <input type="number" class="form-control" name="numberOne" required>
+        </div>
+        <div class="form-group">
+            <label for="numberTwo">Numero 2</label>
+            <input type="number" class="form-control" name="numberTwo" required>
+        </div>
+        <button type="submit" name="btnCalcular" class="btn btn-primary rounded-pill mt-3">Sumar</button>
+    </form>
+</div>
+<div class="w-100">
+    <h3 class="py-3 text-success">La suma es @ViewBag.Result</h3>
+</div>

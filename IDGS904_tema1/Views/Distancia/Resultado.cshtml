@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Resultado";
+}
+
+<div class="container">
+    <h2 class="fw-bold">Resultado</h2>
+    <div class="d-flex align-content-start justify-content-start py-2">
+        <div class="alert alert-success rounded-pill w-50 my-2" role="alert">
+            El resultado es: @ViewBag.Resultado
+        </div>
+    </div>
+    <div class="w-100">
+        @Html.ActionLink("Regresar", "Index", "Distancia", null, new { dato = "", @class = "btn btn-outline-dark rounded-pill" })
+    </div>
+</div>
+
+
